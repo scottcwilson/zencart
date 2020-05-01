@@ -46,10 +46,10 @@
                 Zen Cart&reg; is made available to you for your use, addition, changes, modification, etc. without charge, under Version 2 of the GNU General Public License.
             </p>
             <p>
-                While we do not charge for this software, donations are greatly appreciated, each time you install a new version, to help cover the expenses of maintenance, upgrades, updates, the free support forum and the continued development of this software for your online E-Commerce store.
+                While we do not charge for this software, donations are greatly appreciated each time you install a new version, to help cover the expenses of maintenance, upgrades, updates, the free support forum and the continued development of this software for your online E-Commerce store.
             </p>
             <p>
-                Donations can be made on the <a href="https://www.zen-cart.com/donate" target="_blank">Zen Cart&reg; Team Page</a>
+                Donations can be made on the <a href="https://www.zen-cart.com/donate" target="_blank">Zen Cart&reg; Team Page,</a>
             </p>
             <p>
                 We appreciate your support.
@@ -76,19 +76,19 @@
                 Upgrade Instructions
             </h1>
             <p>
-                This document only mentions the actual changes specific to v1.5.7 since v1.5.6.
+                This document only mentions the actual changes specific to v1.5.7 made since v1.5.6.
             </p>
             <h2>
                 From v1.5.6
             </h2>
             <p>
-                If you are already using v1.5.6 and <em>*have NOT customized or altered*</em> any of the files listed in the changed_files-v1.5.7.html document, then simply replace those files with the new files as listed.
+                If you are already using v1.5.6 and have NOT <em>* customized or altered*</em> any of the files listed in the changed_files-v1.5.7.html document, then simply replace those files with the new files as listed.
             </p>
             <p>
-                If you have <em>*have customized or altered*</em> certain files, simply re-do your customizations in the new version of those particular files by making the same changes needed.
+                If you have <em>*customized or altered*</em> certain files, you must merge your customizations into the new versions of those files.
             </p>
             <p>
-                If you are using Addons/Plugins that have made alterations to those files, it is best to compare those changed files against the original Zen Cart files for the version those plugins were built for, and see what changes were there ... and then re-build those changes in the v1.5.7 file.
+                If you are using Addons/Plugins that use modified versions of those files, you must compare those plugin files to the original Zen Cart files of the version for which those plugins were built, to identify the modifications. Subsequently you must replicate those modifications in the v1.5.7 file.
             </p>
             <h2>
                 To v1.5.7 from v1.5.5 or older
@@ -114,7 +114,7 @@
                 While Zen Cart&reg; v1.5.5-v1.5.7 contains a newer "responsive_classic" template, we <em>STRONGLY</em> recommend that upgraders first upgrade the site using everything (including template_default) <em>EXCEPT</em> the contents of responsive_classic template.
             </p>
             <p>
-                Then once the upgraded site is working properly you can consider what changes you might want to make to your own active template. 
+                Then once the upgraded site is working properly, you can consider what changes you might want to make to your own active template. 
             </p>
             <p>
                 (Important notes about <em>template_default</em> are shown below)
@@ -149,16 +149,13 @@
                 With that explained, it is important that whenever you upgrade your site, you should also inspect ALL the template_default files to determine which changes in those files need to be replicated in your customized files.
             </p>
             <p>
-                Often a tool like <a href="https://www.scootersoftware.com/download.php" target="_blank">Beyond Compare</a> or Araxis Merge or GnuDiff can be helpful for this.
+                Comparison/Merging Tools like <a href="https://www.scootersoftware.com/download.php" target="_blank">Beyond Compare</a> or Araxis Merge or GnuDiff are essential for this process.
             </p>
             <p>
-                The process is simple: compare the template_default directory files from your <em>*old*</em> version against the template_default files in the <em>*new*</em> version, and use those results as a reference to copy those updated changes into each of the files you have customized in your custom/personalized template in your store.
+                The process is simple: compare the template_default directory files from your <em>*old*</em> version to the template_default files in the <em>*new*</em> version, and replicate any differences in the files in your custom/personalized template in your store.
             </p>
             <p>
-                Then, and only after you have done all those comparisons and updated your customized files in your custom template folder, you will copy the template_default files from the new version into the template_default directory of your store. This way you will be left with updated personalized files <em>*and*</em> updated template_default files.
-            </p>
-            <p>
-                This way you will be left with updated personalized files <em>*and*</em> updated template_default files.
+                Then, and only after you have done all those comparisons and updated your customized files, you will copy the template_default files from the new version into the template_default directory of your store.<br>This way you will be left with updated personalized files <em>*and*</em> updated template_default files.
             </p>
         </div>
     </section> <!-- End changesToTemplateDefault //-->
@@ -166,45 +163,48 @@
     <section id="whatsNew">
         <div>
             <h1>
-                What's New ... Changes from prior versions
+                What's New ... Changes from the prior versions
             </h1>
             <h2>
                 The most notable improvements and bugfixes in v1.5.7 since v1.5.6 include:
             </h2>
             <ul>
-                <li>Core - Updated hundreds of files for compatibility with PHP 7.2, 7.3 and 7.4.  <b>These changes, along with updating your PHP version, will make your cart faster.</b></li>
-                <li>Admin - Default notification behavior for order update (send email/do not send email/hide update) may now be set</li>
-                <li>Admin - Admins can now login to customer accounts to place orders</li>
-                <li>Admin - Added product-details popover to allow quick visibility into products bought in an order without opening the order</li>
-                <li>Admin - Validation for integer min and max values and email addresses</li>
-                <li>Admin - Add sort order to order statuses so the admin order update dropdown can mirror your business workflow</li>
-                <li>Admin - Improve many configuration setting descriptions</li>
-                <li>Admin - On-page help added, with links to new documentation</li>
-                <li>Admin – Products to Categories Link Manager. Addition of global tool to copy linked categories to another product.</li>
+                <li>Core - Many files have been updated for compatibility with PHP 7.2, 7.3 and 7.4. <b>These changes, along with updating your PHP version, will make your cart faster.</b></li>
+                <li>Admin - The default notification behavior for an order status update (send email/do not send email/hide update) is now set by an admin switch</li>
+                <li>Admin - Admins can now login to a customer account (login as that customer), to place an order on their behalf.</li>
+                <li>Admin - Order Listing. An order-product-details popover column has been added to allow a quick view of the products ordered without opening the order</li>
+                <li>Admin - Validation added for integer min and max values and email addresses</li>
+                <li>Admin - Added a sort order to the order statuses so the admin order update dropdown can mirror your business workflow</li>
+                <li>Admin - Improved many configuration setting descriptions</li>
+                <li>Admin - On-page help added, with links to the  documentation website</li>
+             <li>Admin - Attribute Controller – GUI improvements and bugfixes.</li>
+             <li>Admin - Featured – GUI improvements, bugfixes and filtering.</li>
+                <li>Admin – Option Name Manager. GUI improvements, bugfixes and filtering.</li>
+                <li>Admin – Products to Categories Link Manager. GUI improvements, bugfixes and the addition of a global tool to copy linked categories to another product.</li>
+             <li>Admin - Specials – GUI improvements and filtering.</li>
                 <li>Admin – Product Copy. Expanded to include copy of metatags and linked categories.</li>
-                <li>Admin - removed "Dear" from email templates to facilitate localization.</li>
                 <li>Admin - Improved customer search.</li>
                 <li>Admin - Improved error messaging.</li>
                 <li>Admin - Alphabetical sorting of Reports and Tools menus.</li>
                 <li>Admin - Improved sanitization of data.</li>
                 <li>Admin - Validation of configuration settings.</li>
-                <li>Storefront - products with single-valued attributes (such as downloads) can now be added to cart from the listing page</li>
+                <li>Storefront - products with single-valued attributes (such as downloads) can now be added to the cart from the listing page</li>
                 <li>Storefront - Product page now includes Ask a Question</li>
                 <li>Storefront - Contact Us page now includes a telephone number</li>
                 <li>Storefront - Improved handling of product restrictions such as units and minimum quantities</li> 
                 <li>Storefront - Define page added to shopping cart page for static content</li> 
-                <li>Email - SPAM prevention built in to forms (Credits @davewest for zenNonCAPTCHA)</li>
+                <li>Email - SPAM prevention built-in to forms (Credits @davewest for zenNonCAPTCHA)</li>
                 <li>Email - Improvements made to increase email deliverability</li>
-                <li>Email – hard-coded text removed.
+                <li>Email templates – hard-coded text removed.
                 <li>Checkout - Updated Square Payment module.  Start taking credit card payments in just 5 minutes! See www.zen-cart.com/partners/square_setup </li>
                 <li>Checkout - layout issues in responsive_classic template fixed.</li>
-                <li>Checkout - Order language stored for use in order processing in multilanguage stores.</li>
+                <li>Checkout - Order language is recorded for use by multilanguage stores.</li>
                 <li>All known v1.5.6 bugfixes and security fixes are included in v1.5.7</li>
-                <li>... and numerous other small improvements to make things work faster, sleeker, smarter and be easier to use</li>
+                <li>... and many other incremental improvements to make Zen Cart more efficient, more robust and easier to use.</li>
             </ul>
             <div>
                 <p>
-                    A detailed list of all edits to all files can be seen on Github at: <a href="https://github.com/zencart/zencart/compare/v156...v157">v1.5.6...v1.5.7</a><br>
+                    A detailed list of all edits to all files can be seen on GitHub at: <a href="https://github.com/zencart/zencart/compare/v156...v157">v1.5.6...v1.5.7</a><br>
                 </p>
             </div>
             <div class="back-to-top">
