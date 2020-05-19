@@ -85,10 +85,10 @@
                 If you are already using v1.5.6 and <em>*have NOT customized or altered*</em> any of the files listed in the changed_files-v1.5.7.html document, then simply replace those files with the new files as listed.
             </p>
             <p>
-                If you have <em>*have customized or altered*</em> certain files, simply re-do your customizations in the new version of those particular files by making the same changes needed.
+                If you have <em>*customized or altered*</em> certain files, you must merge your customizations into the new versions of those files.
             </p>
             <p>
-                If you are using Addons/Plugins that have made alterations to those files, it is best to compare those changed files against the original Zen Cart files for the version those plugins were built for, and see what changes were there ... and then re-build those changes in the v1.5.7 file.
+                If you are using Addons/Plugins that use modified versions of those files, you must compare those plugin files to the original Zen Cart files of the version for which those plugins were built, to identify the modifications. Subsequently you must replicate those modifications in the v1.5.7 file.
             </p>
             <h2>
                 To v1.5.7 from v1.5.5 or older
@@ -149,10 +149,10 @@
                 With that explained, it is important that whenever you upgrade your site, you should also inspect ALL the template_default files to determine which changes in those files need to be replicated in your customized files.
             </p>
             <p>
-                Often a tool like <a href="https://www.scootersoftware.com/download.php" target="_blank">Beyond Compare</a> or Araxis Merge or GnuDiff can be helpful for this.
+                Comparison/Merging Tools like <a href="https://www.scootersoftware.com/download.php" target="_blank">Beyond Compare</a> or Araxis Merge or GnuDiff are essential for this process.
             </p>
             <p>
-                The process is simple: compare the template_default directory files from your <em>*old*</em> version against the template_default files in the <em>*new*</em> version, and use those results as a reference to copy those updated changes into each of the files you have customized in your custom/personalized template in your store.
+                The process is simple: compare the template_default directory files from your <em>*old*</em> version to the template_default files in the <em>*new*</em> version, and replicate any differences in the files in your custom/personalized template in your store. </p>
             </p>
             <p>
                 Then, and only after you have done all those comparisons and updated your customized files in your custom template folder, you will copy the template_default files from the new version into the template_default directory of your store. This way you will be left with updated personalized files <em>*and*</em> updated template_default files.
