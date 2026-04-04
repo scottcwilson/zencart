@@ -174,7 +174,7 @@ FROM project_version;
 
 ## Now set to new version
 SET @VERSION_MAJOR = '2';
-SET @VERSION_MINOR = '2.1';
+SET @VERSION_MINOR = '2.2';
 SET @DB_MAJOR = '2';
 SET @DB_MINOR = '2.0';
 
